@@ -1,6 +1,6 @@
 # Basics
 Here my notes on my processes of learning Pytorch from Pytorch official tutorials.
-URL: https://pytorch.org/tutorials/
+url: https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html
 
 Ok, this page says I will become a ninja ML killer developer. :ninja:
 
