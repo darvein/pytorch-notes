@@ -1,6 +1,7 @@
 # Basics
 Here my notes on my processes of learning Pytorch from Pytorch official tutorials.
-url: https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html
+
+URL: https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html
 
 Ok, this page says I will become a ninja ML killer developer. :ninja:
 
@@ -20,6 +21,12 @@ We first need to create an isolated python environment, `conda` can help here:
 source /opt/miniconda3/etc/profile.d/conda.sh
 conda create -n dev python=3.8
 conda activate dev
+```
+
+Some required toolz:
+```sh
+conda install ipython
+#conda install pytorch torchvision torchaudio cudatoolkit=xx.x -c pytorch # Optional
 ```
 
 We can confirm we are inside our "virtual python box":
