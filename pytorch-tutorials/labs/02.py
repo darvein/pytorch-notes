@@ -39,7 +39,31 @@ def create_tensor_random_data():
     print(f"Ones Tensor: \n {ones_tensor} \n")
     print(f"Zeros Tensor: \n {zeros_tensor}")
 
+def tensor_properties():
+    device = "cuda" if torch.cuda.is_available() else "cpu" # GPU or CPU
+
+    tensor = torch.rand(3,4).to(device)
+    print(f"Shape of tensor: {tensor.shape}")
+    print(f"Datatype of tensor: {tensor.dtype}")
+    print(f"Device tensor is stored on: {tensor.device}")
+
+def tensor_slicing():
+    tensor = torch.ones(4, 4)
+
+    if torch.cuda.is_available():
+        tensor = tensor.to("cuda")
+
+    print(f"First row: {tensor[0]}")
+    print(f"First column: {tensor[:, 0]}")
+    print(f"Last column: {tensor[..., -1]}")
+
+    tensor[:, 1] = 2
+    print(tensor)
+
+    print("Joining tensors: {}".format(torch.cat([tensor, tensor, tensor], dim=1)))
 
 #create_tensor()
 #replace_tensor_data()
 #create_tensor_random_data()
+#tensor_properties()
+#tensor_slicing()

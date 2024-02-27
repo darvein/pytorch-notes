@@ -11,3 +11,4 @@ A tensor is a data structure, a multi-dimensional array. Used to store data for 
 
 ## Tensor operations
 > Over 100 tensor operations, including arithmetic, linear algebra, matrix manipulation (transposing, indexing, slicing), sampling
+
